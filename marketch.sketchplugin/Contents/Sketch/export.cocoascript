@@ -496,7 +496,7 @@ Marketch.prototype = {
 
             //导出2x的图
             slice.scale = 2;
-            exportConfig.name = exportConfig.name.replace('@1x.png', '@3x.png');
+            exportConfig.name = exportConfig.name.replace('@1x.png', '@2x.png');
             [doc saveArtboardOrSlice:slice toFile:exportConfig.name];
 
             if(/^svg/i.test(layer.name())){
